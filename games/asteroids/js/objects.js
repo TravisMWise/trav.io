@@ -114,10 +114,10 @@ class Ship extends Mass {
         this.retro_on = false;
         this.weapon_power = weapon_power || 200;
         this.loaded = false;
-        this.weapon_reload_time = 0.19; // seconds
+        this.weapon_reload_time = 0.125; // seconds
         this.time_until_reload = this.weapon_reload_time;
         this.compromised = false;
-        this.max_health = 2.0;
+        this.max_health = 2.5;
         this.health = this.max_health;
     }
 

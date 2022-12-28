@@ -131,7 +131,7 @@ class AsteroidsGame {
     level_up() {
         this.level += 1;
         this.ship.health = this.ship.max_health;
-        for (let i = 0; i < this.level + 10; i++) {
+        for (let i = 0; i < this.level; i++) {
             this.asteroids.push(this.moving_asteroid());
         }
     }

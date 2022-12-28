@@ -7,21 +7,21 @@ function draw_grid(ctx, minor, major, stroke, fill) {
     ctx.strokeStyle = stroke;
     ctx.font = "15px Arial";
     ctx.fillStyle = fill;
-    
+
     let width = ctx.canvas.width, height = ctx.canvas.height;
     for (var x = 0; x < width; x += minor) {
         ctx.beginPath();
-        ctx.moveTo(x,0);
-        ctx.lineTo(x,height);
-        if(x % major == 0) { ctx.fillText(x,x,15); }
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, height);
+        if (x % major == 0) { ctx.fillText(x, x, 15); }
         ctx.lineWidth = (x % major == 0) ? 0.5 : 0.25;
         ctx.stroke();
     }
     for (var y = 0; y < height; y += minor) {
         ctx.beginPath();
-        ctx.moveTo(0,y);
-        ctx.lineTo(width,y);
-        if(y % major == 0) { ctx.fillText(y,0,y+15); }
+        ctx.moveTo(0, y);
+        ctx.lineTo(width, y);
+        if (y % major == 0) { ctx.fillText(y, 0, y + 15); }
         ctx.lineWidth = (y % major == 0) ? 0.5 : 0.25;
         ctx.stroke();
     }
@@ -36,7 +36,7 @@ function draw_pacman(ctx, radius, mouth) {
     ctx.strokeStyle = "black";
     ctx.lineWidth = 0.5;
     ctx.beginPath();
-    ctx.arc(0,0,radius,angle,-angle);
+    ctx.arc(0, 0, radius, angle, -angle);
     ctx.lineTo(0, 0);
     ctx.fill();
     ctx.stroke();
@@ -51,7 +51,7 @@ function draw_ship(ctx, radius, options) {
     ctx.lineWidth = options.lineWidth || 2;
     ctx.strokeStyle = options.stroke || "white";
     ctx.fillStyle = options.fill || "black";
-    let angle = (options.angle || (1/2) * PI) / 2;
+    let angle = (options.angle || (1 / 2) * PI) / 2;
     let curve1 = options.curve1 || 0.25;
     let curve2 = options.curve2 || 0.75;
     // Optionally draw a guide showing the collision radius
@@ -60,30 +60,30 @@ function draw_ship(ctx, radius, options) {
         ctx.fillStyle = "rgba(0,0,0,0.5)";
         ctx.lineWidth = 1;
         ctx.beginPath();
-        ctx.arc(0,0,radius,0,2*PI);
+        ctx.arc(0, 0, radius, 0, 2 * PI);
         ctx.stroke();
         ctx.fill();
     }
 
-    if(options.thruster_on) {
+    if (options.thruster_on) {
         ctx.save();
         ctx.strokeStyle = "yellow";
         ctx.fillStyle = "red";
         ctx.lineWidth = 3;
         ctx.beginPath();
         ctx.moveTo(
-        Math.cos(Math.PI + angle * 0.8) * radius / 2,
-        Math.sin(Math.PI + angle * 0.8) * radius / 2
+            Math.cos(Math.PI + angle * 0.8) * radius / 2,
+            Math.sin(Math.PI + angle * 0.8) * radius / 2
         )
         ctx.quadraticCurveTo(
-            -radius * 2, 
+            -radius * 2,
             0,
             Math.cos(Math.PI - angle * 0.8) * radius / 2,
             Math.sin(Math.PI - angle * 0.8) * radius / 2
         );
         ctx.fill();
         ctx.stroke();
-        
+
         ctx.lineWidth = 4;
         ctx.moveTo(radius, 0); // Start at the right point
         ctx.quadraticCurveTo(
@@ -93,7 +93,7 @@ function draw_ship(ctx, radius, options) {
             Math.sin(Math.PI - angle) * radius
         );
         ctx.quadraticCurveTo(
-            -radius * curve1, 
+            -radius * curve1,
             0,
             Math.cos(Math.PI + angle) * radius,
             Math.sin(Math.PI + angle) * radius
@@ -101,7 +101,7 @@ function draw_ship(ctx, radius, options) {
         ctx.quadraticCurveTo(
             Math.cos(-angle) * radius * curve2,
             Math.sin(-angle) * radius * curve2,
-            radius, 
+            radius,
             0
         );
         ctx.fill();
@@ -119,7 +119,7 @@ function draw_ship(ctx, radius, options) {
         Math.sin(Math.PI - angle) * radius
     );
     ctx.quadraticCurveTo(
-        -radius * curve1, 
+        -radius * curve1,
         0,
         Math.cos(Math.PI + angle) * radius,
         Math.sin(Math.PI + angle) * radius
@@ -127,7 +127,7 @@ function draw_ship(ctx, radius, options) {
     ctx.quadraticCurveTo(
         Math.cos(-angle) * radius * curve2,
         Math.sin(-angle) * radius * curve2,
-        radius, 
+        radius,
         0
     );
     ctx.closePath();
@@ -135,7 +135,7 @@ function draw_ship(ctx, radius, options) {
     ctx.stroke();
 
     // Guide lines and control points
-    if(options.guide) {
+    if (options.guide) {
         ctx.strokeStyle = "white";
         ctx.fillStyle = "white";
         ctx.lineWidth = 0.5;
@@ -156,19 +156,19 @@ function draw_ship(ctx, radius, options) {
         ctx.arc(
             Math.cos(angle) * radius * curve2,
             Math.sin(angle) * radius * curve2,
-            radius/40, 0, 2 * Math.PI
+            radius / 40, 0, 2 * Math.PI
         );
         ctx.fill();
         ctx.beginPath();
         ctx.arc(
             Math.cos(-angle) * radius * curve2,
             Math.sin(-angle) * radius * curve2,
-            radius/40, 0, 2 * Math.PI
+            radius / 40, 0, 2 * Math.PI
         );
         ctx.fill();
         ctx.beginPath();
-        ctx.arc(radius * curve1 - radius, 0, radius/50, 0, 2 *
-        Math.PI);
+        ctx.arc(radius * curve1 - radius, 0, radius / 50, 0, 2 *
+            Math.PI);
         ctx.fill();
     }
     ctx.restore();
@@ -190,7 +190,7 @@ function draw_shapes(ctx, radius, segments, options) {
     if (options.guide) {
         ctx.lineWidth = 0.5;
         ctx.beginPath();
-        ctx.arc(0,0,radius,0,2*Math.PI);
+        ctx.arc(0, 0, radius, 0, 2 * Math.PI);
         ctx.stroke();
     }
     ctx.restore();
@@ -214,14 +214,14 @@ function draw_asteroid(ctx, radius, shape, options) {
     if (options.guide) {
         ctx.lineWidth = 0.5;
         ctx.beginPath();
-        ctx.arc(0,0,radius,0,2*Math.PI);
+        ctx.arc(0, 0, radius, 0, 2 * Math.PI);
         ctx.stroke();
         ctx.beginPath();
         ctx.lineWidth = 0.2;
-        ctx.arc(0,0,radius + radius * noise, 0, 2*Math.PI);
+        ctx.arc(0, 0, radius + radius * noise, 0, 2 * Math.PI);
         ctx.stroke();
         ctx.beginPath();
-        ctx.arc(0,0,radius - radius * noise, 0, 2 * Math.PI);
+        ctx.arc(0, 0, radius - radius * noise, 0, 2 * Math.PI);
         ctx.stroke();
     }
     ctx.restore();
@@ -231,7 +231,7 @@ function draw_projectile(ctx, radius, lifetime, guide) {
     ctx.save();
     ctx.fillStyle = "rgb(100%, 100%," + (100 * lifetime) + "%)";
     ctx.beginPath();
-    ctx.arc(0,0,radius,0,2 * Math.PI);
+    ctx.arc(0, 0, radius, 0, 2 * Math.PI);
     ctx.fill();
     ctx.restore();
 }
@@ -246,9 +246,9 @@ function draw_ghost(ctx, radius, options) {
     ctx.fillStyle = options.fill || "red";
     ctx.lineWidth = options.lineWidth || radius * 0.0345;
     ctx.beginPath();
-    for(foot = 0; foot < feet; foot++) {
+    for (foot = 0; foot < feet; foot++) {
         ctx.arc(
-            (2*foot_radius * (feet-foot)) - head_radius - foot_radius,
+            (2 * foot_radius * (feet - foot)) - head_radius - foot_radius,
             radius - foot_radius,
             foot_radius,
             0,
@@ -272,7 +272,7 @@ function draw_ghost(ctx, radius, options) {
     ctx.arc(-head_radius / 3 - radius / 10, -head_radius / 3, radius / 4, 0, 2 * Math.PI)
     ctx.stroke();
     ctx.fill();
-    
+
     ctx.fillStyle = "black";
     // Right eye outer
     ctx.beginPath();
@@ -284,7 +284,7 @@ function draw_ghost(ctx, radius, options) {
     ctx.arc(-head_radius / 3 - radius / 10, -head_radius / 3, radius / 8, 0, 2 * Math.PI)
     ctx.stroke();
     ctx.fill();
-    
+
     ctx.restore();
 }
 

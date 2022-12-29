@@ -1,0 +1,8 @@
+body {
+  height: 98vh;
+  background: linear-gradient(90deg, black, gray);
+  color: rgb(255, 255, 255);
+}
+.nav-bar {
+  background: linear-gradient(black, gray);
+}

@@ -1,0 +1,214 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  padding: 0;
+  margin: 0;
+  min-width: 960px;
+}
+
+.back-welcome {
+  background: transparent;
+  margin: 0px auto;
+  margin-top: 20vh;
+  margin-left: 20vw;
+}
+.welcome {
+  display: inline-block;
+  margin: 0px auto;
+  background: black;
+  padding: 100px;
+  width: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.335);
+  border-radius: 10%;
+  min-width: 400px;
+}
+
+.welcome a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.welcome a:hover,
+#welcome-name:hover {
+  color: rgb(66, 138, 255);
+}
+#welcome-pfp:hover {
+  border: 3px solid rgb(66, 138, 255);
+}
+
+#welcome-name {
+  font-family: "EB Garamond", serif;
+  font-size: xx-large;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.welcome-inner {
+  display: inline-block;
+  margin: 0px auto;
+  background: black;
+
+  padding: 0px;
+  width: 50%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+#welcome-pfp {
+  width: 40%;
+  margin-left: 30px;
+  margin-right: 0;
+  padding: 0;
+  border: 3px solid black;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.nav-bar {
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+#logo-name {
+  width: 200px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  margin-right: 23vw;
+  font-family: "EB Garamond", serif;
+  font-size: x-large;
+}
+
+.links {
+  cursor: pointer;
+  padding: 10px;
+  height: 35px;
+  margin: 5px;
+  background: transparent;
+  color: white;
+}
+
+.links:hover {
+  color: rgb(66, 138, 255);
+}
+
+.content-outer {
+  height: fit-content;
+  background: rgba(255, 255, 255, 0.1);
+  height: 200vh;
+  width: 70vw;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  min-width: 966px;
+}
+.content-inner {
+  height: fit-content;
+  padding-bottom: 100px;
+  background-color: rgba(248, 248, 248, 0.755);
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  padding: 10px;
+  color: black;
+}
+
+#contact-pfp {
+  width: 100px;
+  border: 3px solid black;
+  border-radius: 100%;
+  display: block;
+  margin: 0px auto;
+  margin-top: 100px;
+}
+
+#contact-name {
+  font-family: "EB Garamond", serif;
+  font-size: xx-large;
+  text-align: center;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+}
+
+.description {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: x-large;
+}
+
+.linkTo {
+  display: block;
+  margin: 15px auto;
+  width: 40vw;
+  height: 40px;
+  background: linear-gradient(90deg, black, white 50px);
+  font-family: "Ubuntu", sans-serif;
+  font-size: large;
+  cursor: pointer;
+}
+.linkTo:hover {
+  color: rgb(66, 138, 255);
+  background: linear-gradient(90deg, black, white 100px);
+}
+
+#Phone:hover {
+  color: black;
+  cursor: default;
+}
+
+.project-name {
+  color: black;
+}
+
+.project-description {
+  color: black;
+  display: inline;
+  tab-size: 2;
+  margin: 10px;
+}
+
+.project-img {
+  width: 600px;
+  display: block;
+  margin: 10px auto;
+  background-color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 3px solid black;
+}
+
+.project-label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.project-name:hover {
+  color: rgb(66, 138, 255);
+  cursor: pointer;
+}
+.project-img:hover {
+  border: 3px solid rgb(66, 138, 255);
+  cursor: pointer;
+}
+
+.main-title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: xx-large;
+}

@@ -76,7 +76,8 @@ body {
   vertical-align: middle;
 }
 
-#logo-name {
+#logo-name,
+#games-logo-name {
   width: 200px;
   height: 35px;
   margin: 0;

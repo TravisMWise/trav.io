@@ -35,6 +35,10 @@
   background-image: url("../images/game_images/asteroids.png");
 }
 
+.stargazers {
+  background-image: url("../images/game_images/stargazers.png");
+}
+
 body2 {
   text-align: center;
   padding: 0;

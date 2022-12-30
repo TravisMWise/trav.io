@@ -34,7 +34,7 @@ import { Centipede } from "../enemies/centipede.js";
 import { Beholder } from "../enemies/beholder.js";
 import { Scorpion } from "../enemies/scorpion.js";
 import { Golem } from "../enemies/golem.js";
-import { DogMan } from "../enemies/dogman.js";
+import { DogMan } from "../enemies/dogMan.js";
 import { VirusMonster } from "../enemies/virusMonster.js";
 import { Rhino } from "../enemies/rhino.js";
 import { Acide } from "../powerups/acide.js";
@@ -1024,7 +1024,7 @@ export class App {
                 break;
         }
 
-        console.log(`Performance load image data for chapter ${this.currentChap} is`, this.loader.performanceData);
+        // console.log(`Performance load image data for chapter ${this.currentChap} is`, this.loader.performanceData);
     }
 
     drawSequentialChaps(p) {

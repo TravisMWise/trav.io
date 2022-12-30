@@ -31,14 +31,15 @@
 .comingSoon {
   background-image: url("../images/game_images/coming_soon.png");
 }
-.asteroids {
+.Asteroids {
   background-image: url("../images/game_images/asteroids.png");
 }
-
-.stargazers {
+.Stargazers {
   background-image: url("../images/game_images/stargazers.png");
 }
-
+.Dimension {
+  background-image: url("../images/game_images/dimension.png");
+}
 body2 {
   text-align: center;
   padding: 0;

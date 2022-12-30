@@ -187,7 +187,6 @@ export class App {
                 this.loader.loadSet(p, this.iceProjectiles, "effects/ice_projectiles", "__ice_projectile_", ["arrow", "shard"], [7, 7]);
                 this.loader.loadSet(p, this.flameEffects, "effects/flame_effects", "__flame_effects_", ["red"], [14]);
                 this.loader.loadSet(p, this.electricAttacks, "effects/electric_attacks", "__electric_attacks_", ["explode", "spark_explode"], [10, 8]);
-                this.loader.loadSet(p, this.electricAttacks, "effects/electric_attacks", "__electric_attacks_", ["explode", "spark_explode"], [10, 8]);
                 // this.rhinoDark = this.loader.loadAnimation(p, "enemies/rhino/dark", ["charge", "die", "head_smash", "idle", "kick_back", "stomp", "stop", "walk", "whacked"], 805);
                 // this.eyeBallGreen = this.loader.loadAnimation(p, "enemies/eyeBall/green", ["die", "idle", "move"], 869);
                 // this.dogmanBlack = this.loader.loadAnimation(p, "enemies/dogman/black", ["bite", "die", "idle", "run_claws_out", "walk", "roar", "smash", "slash"], 1016);
@@ -284,12 +283,11 @@ export class App {
                 {
                     this.playerLoadset = this.loader.loadAnimation(p, "main/char", ["idle", "jump", "walk", "dash3"], 512);
                     this.loader.loadSet(p, this.jumpDirection, "effects/jump", "", ["land", "take_off"], [8, 7]);
-                    this.loader.loadSet(p, this.orbs, "effects/orb_effect", "__orb_effect_", ["purple_orb", "white_orb", "yellow_orb"], [6, 6, 6]);
-                    this.loader.loadSet(p, this.iceEffects, "effects/ice_effects", "__ice_effects_", ["shield", "shard_wave"], [13, 16]);
-                    this.loader.loadSet(p, this.iceProjectiles, "effects/ice_projectiles", "__ice_projectile_", ["arrow", "shard"], [7, 7]);
+                    this.loader.loadSet(p, this.orbs, "effects/orb_effect", "__orb_effect_", ["white_orb"], [6]);
+                    this.loader.loadSet(p, this.iceEffects, "effects/ice_effects", "__ice_effects_", ["shield"], [13]);
+                    // this.loader.loadSet(p, this.iceProjectiles, "effects/ice_projectiles", "__ice_projectile_", ["arrow", "shard"], [7, 7]);
                     this.loader.loadSet(p, this.flameEffects, "effects/flame_effects", "__flame_effects_", ["red"], [14]);
-                    this.loader.loadSet(p, this.electricAttacks, "effects/electric_attacks", "__electric_attacks_", ["explode", "spark_explode"], [10, 8]);
-                    this.loader.loadSet(p, this.electricAttacks, "effects/electric_attacks", "__electric_attacks_", ["explode", "spark_explode"], [10, 8]);
+                    // this.loader.loadSet(p, this.electricAttacks, "effects/electric_attacks", "__electric_attacks_", ["explode", "spark_explode"], [10, 8]);
 
                     // Effects
                     // this.loader.loadSet(p, this.greenBurst, "effects/toxic_effects/poison_spash/poison_splash", "poison_splash", [""], [9]);

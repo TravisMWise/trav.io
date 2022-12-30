@@ -284,9 +284,9 @@ export class App {
                     this.playerLoadset = this.loader.loadAnimation(p, "main/char", ["idle", "jump", "walk", "dash3"], 512);
                     this.loader.loadSet(p, this.jumpDirection, "effects/jump", "", ["land", "take_off"], [8, 7]);
                     this.loader.loadSet(p, this.orbs, "effects/orb_effect", "__orb_effect_", ["white_orb"], [6]);
-                    this.loader.loadSet(p, this.iceEffects, "effects/ice_effects", "__ice_effects_", ["shield"], [13]);
+                    // this.loader.loadSet(p, this.iceEffects, "effects/ice_effects", "__ice_effects_", ["shield"], [13]);
                     // this.loader.loadSet(p, this.iceProjectiles, "effects/ice_projectiles", "__ice_projectile_", ["arrow", "shard"], [7, 7]);
-                    this.loader.loadSet(p, this.flameEffects, "effects/flame_effects", "__flame_effects_", ["red"], [14]);
+                    // this.loader.loadSet(p, this.flameEffects, "effects/flame_effects", "__flame_effects_", ["red"], [14]);
                     // this.loader.loadSet(p, this.electricAttacks, "effects/electric_attacks", "__electric_attacks_", ["explode", "spark_explode"], [10, 8]);
 
                     // Effects
@@ -465,8 +465,8 @@ export class App {
                             // new FireMage(p, 14656, 1720, 43, 126, 10, 1000, 0, true, 20, 10, { mage: this.magesFemalefire, listen: this.chapters[this.currentChap].images.listen, talksound: this.chapters[this.currentChap].sounds.firemage }),
                         ],
                         [
-                            new Feu(p, 500, 600, 60, 60),
-                            new Energie(p, 600, 600, 60, 60),
+                            // new Feu(p, 500, 600, 60, 60),
+                            // new Energie(p, 600, 600, 60, 60),
                             /* Collectables */
                         ]
                     )

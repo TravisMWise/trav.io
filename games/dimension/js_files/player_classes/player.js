@@ -158,9 +158,9 @@ export class Player extends Attacker {
 
         // Orbs
         switch (this.currentClass) {
-            case 1: this.addAction(p, "white_orb", [], ["white_orb", "purple_orb", "yellow_orb"]); break;
-            case 2: this.addAction(p, "purple_orb", [], ["white_orb", "purple_orb", "yellow_orb"]); break;
-            case 3: this.addAction(p, "yellow_orb", [], ["white_orb", "purple_orb", "yellow_orb"]); break;
+            // case 1: this.addAction(p, "white_orb", [], ["white_orb", "purple_orb", "yellow_orb"]); break;
+            // case 2: this.addAction(p, "purple_orb", [], ["white_orb", "purple_orb", "yellow_orb"]); break;
+            // case 3: this.addAction(p, "yellow_orb", [], ["white_orb", "purple_orb", "yellow_orb"]); break;
         }
 
 
@@ -475,21 +475,21 @@ export class Player extends Attacker {
                     body: [],
                     sprite: new Sprite(this.healImage, 192, 190, { "idle": { "id": 0, "frames": 5 } }, this.x - 66, this.y - 56, 0.8, 0.8)
                 };
-            case "purple_orb":
-                return {
-                    complex: false,
-                    sprite: new LoadSet(this.orbs, "purple_orb", 795, 778, this.orbX, this.orbY, 0.09, 0.09, 1, 6),
-                }
-            case "white_orb":
-                return {
-                    complex: false,
-                    sprite: new LoadSet(this.orbs, "white_orb", 795, 778, this.orbX, this.orbY, 0.09, 0.09, 1, 6),
-                }
-            case "yellow_orb":
-                return {
-                    complex: false,
-                    sprite: new LoadSet(this.orbs, "yellow_orb", 795, 778, this.orbX, this.orbY, 0.09, 0.09, 1, 6),
-                }
+            // case "purple_orb":
+            //     return {
+            //         complex: false,
+            //         sprite: new LoadSet(this.orbs, "purple_orb", 795, 778, this.orbX, this.orbY, 0.09, 0.09, 1, 6),
+            //     }
+            // case "white_orb":
+            //     return {
+            //         complex: false,
+            //         sprite: new LoadSet(this.orbs, "white_orb", 795, 778, this.orbX, this.orbY, 0.09, 0.09, 1, 6),
+            //     }
+            // case "yellow_orb":
+            //     return {
+            //         complex: false,
+            //         sprite: new LoadSet(this.orbs, "yellow_orb", 795, 778, this.orbX, this.orbY, 0.09, 0.09, 1, 6),
+            //     }
 
             //
             // Attacks
@@ -770,18 +770,18 @@ export class Player extends Attacker {
         if (this.health >= 100) this.health = 100;
         if (this.health <= 0) this.health = 0;
 
-        p.push()
-        p.angleMode(p.DEGREES)
-        if (this.currentDirection === "left") this.transitionOrb += 0.5
-        else this.transitionOrb -= 0.5
+        // p.push()
+        // p.angleMode(p.DEGREES)
+        // if (this.currentDirection === "left") this.transitionOrb += 0.5
+        // else this.transitionOrb -= 0.5
 
-        this.orbX = p.lerp(this.orbX, this.x + this.transitionOrb - 25 + p.cos(p.frameCount * 2) * 10, 0.02);
-        this.orbY = p.lerp(this.orbY, this.y - 90 + p.sin(p.frameCount * 2) * 20, 0.02);
+        // this.orbX = p.lerp(this.orbX, this.x + this.transitionOrb - 25 + p.cos(p.frameCount * 2) * 10, 0.02);
+        // this.orbY = p.lerp(this.orbY, this.y - 90 + p.sin(p.frameCount * 2) * 20, 0.02);
 
-        this.transitionOrb = p.constrain(this.transitionOrb, -60, 60)
+        // this.transitionOrb = p.constrain(this.transitionOrb, -60, 60)
 
-        p.angleMode(p.RADIANS)
-        p.pop()
+        // p.angleMode(p.RADIANS)
+        // p.pop()
 
         p.noStroke();
         for (var i = 0; i < this.particles.x.length; ++i) {

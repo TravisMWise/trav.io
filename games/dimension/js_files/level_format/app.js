@@ -283,7 +283,7 @@ export class App {
                 {
                     this.playerLoadset = this.loader.loadAnimation(p, "main/char", ["idle", "jump", "walk", "dash3"], 512);
                     this.loader.loadSet(p, this.jumpDirection, "effects/jump", "", ["land", "take_off"], [8, 7]);
-                    this.loader.loadSet(p, this.orbs, "effects/orb_effect", "__orb_effect_", ["white_orb"], [6]);
+                    // this.loader.loadSet(p, this.orbs, "effects/orb_effect", "__orb_effect_", ["white_orb"], [6]);
                     // this.loader.loadSet(p, this.iceEffects, "effects/ice_effects", "__ice_effects_", ["shield"], [13]);
                     // this.loader.loadSet(p, this.iceProjectiles, "effects/ice_projectiles", "__ice_projectile_", ["arrow", "shard"], [7, 7]);
                     // this.loader.loadSet(p, this.flameEffects, "effects/flame_effects", "__flame_effects_", ["red"], [14]);

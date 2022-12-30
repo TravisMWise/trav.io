@@ -1,0 +1,1 @@
+this.loader.loadSet(p, this.virusMonsterBombAnimation, "effects/virus_bomb", "__virus_bomb_", ["explode", "idle"], [8, 1]);

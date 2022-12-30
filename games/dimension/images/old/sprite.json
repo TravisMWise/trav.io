@@ -1,0 +1,20 @@
+{
+    "spriteSheets": [
+        {
+            "file": "effects/lightning1",
+            "spriteSheet": "this.sprite = new Sprite('./images/effects/lightning1.png', 260, 270, {\"idle\":{\"id\":2,\"frames\":5}})"
+        },
+        {
+            "file": "effects/lightning1",
+            "spriteSheet": "this.sprite = new Sprite('./images/effects/lightning1.png', 260, 270, {\"idle\":{\"id\":1,\"frames\":5}})"
+        },
+        {
+            "file": "effects/fire.png",
+            "spriteSheet": "this.sprite = new Sprite('./images/effects/fire.png', 106, 70, {\"idle\":{\"id\":0,\"frames\":2}})"
+        },
+        {
+            "file": "effects/portal.png",
+            "spriteSheet": "this.sprite = new Sprite('./images/effects/portal.png', 135, 130, {\"idle\":{\"id\":0,\"frames\":5}})"
+        }
+    ]
+}

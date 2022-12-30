@@ -1,0 +1,13 @@
+export { Projectile } from "./projectile.js";
+export { Actor } from "./actor.js";
+export { Pawn } from "./pawn.js";
+export { Interactable } from "./interactable.js";
+export { Collectable } from "./collectable.js";
+export { Collision } from "./collision.js";
+export { HarmfulObjects } from "./harmful_objects.js";
+export { ActionObjects } from "./action_object.js";
+export { Attacker } from "./attacker.js";
+export { Passive } from "./passive.js";
+export { Aggressive } from "./agressive.js";
+export { Defensive } from "./defensive.js";
+export { Sprite } from "./sprite.js";

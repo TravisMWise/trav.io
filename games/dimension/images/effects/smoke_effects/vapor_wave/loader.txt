@@ -1,0 +1,1 @@
+this.loader.loadSet(p, this.vaporWave, "effects/smoke_effects/vapor_wave", "__vapor_wave_", ["blue", "green", "turquiose", "white"], [9, 9, 9, 9, 9], 0);

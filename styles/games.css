@@ -40,6 +40,9 @@
 .Dimension {
   background-image: url("../images/game_images/dimension.png");
 }
+.TileVania {
+  background-image: url("../images/game_images/TileVania.png");
+}
 body2 {
   text-align: center;
   padding: 0;

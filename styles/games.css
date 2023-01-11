@@ -43,6 +43,9 @@
 .TileVania {
   background-image: url("../images/game_images/TileVania.png");
 }
+.LaserDefender {
+  background-image: url("../images/game_images/LaserDefender.png");
+}
 body2 {
   text-align: center;
   padding: 0;

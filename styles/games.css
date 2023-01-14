@@ -46,6 +46,9 @@
 .LaserDefender {
   background-image: url("../images/game_images/LaserDefender.png");
 }
+.FallingBalls {
+  background-image: url("../images/game_images/FallingBalls.png");
+}
 body2 {
   text-align: center;
   padding: 0;

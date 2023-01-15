@@ -1,0 +1,46 @@
+  #contact-pfp {
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 100%;
+    display: block;
+    margin: 0px auto;
+  }
+  
+  #contact-name {
+    font-family: "EB Garamond", serif;
+    font-size: xx-large;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .description {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: x-large;
+  }
+  
+  .linkTo {
+    display: block;
+    margin: 15px auto;
+    width: 35vw;
+    height: 40px;
+    background: linear-gradient(90deg, black, white 50px);
+    font-family: "Ubuntu", sans-serif;
+    font-size: large;
+    cursor: pointer;
+    min-width: 300px;
+  }
+  .linkTo:hover {
+    color: rgb(66, 138, 255);
+    background: linear-gradient(90deg, black, white 100px);
+  }
+  
+  #Phone:hover {
+    color: black;
+    cursor: default;
+  }
+  

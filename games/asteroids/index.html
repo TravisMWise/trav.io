@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/style.css" />
-    <link rel="stylesheet" href="../../styles/other.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Styles -->
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/other.css"> -->
+    <link rel="stylesheet" href="../../styles/newStyles.css">
     <link rel="stylesheet" href="../../styles/games.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,64 +19,87 @@
       rel="stylesheet"
     />
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>TravTutor | Asteroids Info Page</title>
   </head>
   <body>
-    <!-- Header -->
-    <div class="nav-bar">
-      <button class="links" id="games-logo-name">Travis M. Wise</button>
-      <button class="links" id="games-home">HOME</button>
-      <button class="links" id="games-about">ABOUT</button>
-      <button class="links" id="games-projects">PROJECTS</button>
-      <button class="links" id="games-games">GAMES</button>
-      <button class="links" id="games-contact">CONTACT</button>
-    </div>
-    <!-- Main Content -->
-    <div class="content-outer" style="height: fit-content">
-      <div class="content-inner">
-        <div class="content">
-          <h1 class="title">Asteroids</h1>
-          <h2>How To Play</h2>
-          <h3>About</h3>
-          <p>
-            &emsp;This game is a simple asteroids like game which the player
-            controls a space ship and can fly through space destroying
-            asteroids. This game was made using only JavaScript and if you would
-            like to recreate the game yourself or learn how it was created you
-            can read this book here.
-            <br /><br />
-            &emsp;Controlling the ship is quite difficult and takes some time to
-            master since the game uses forces to accelerate the ship and
-            asteroids but since the objects are in space there is no gravity to
-            slow the objects down and thus any for applied is a constant force
-            until another force is applied (Newton's laws of motion). So
-            pressing down the key to turn the ship will cause the ship to turn
-            forever until you apply a force in the opposite direction. At first
-            this is disorienting and hard to control but with time it becomes
-            quite fun to fly around and control the physics of the ship.
-          </p>
-          <h3>Controls</h3>
-          <ul>
-            <li>Turn Ship: A/Left Arrow and D/Right Arrow Keys</li>
-            <li>Accelerate Ship: W/Up Arrow and S/Down Arrow Keys</li>
-            <li>Stop Ship: Q Key</li>
-            <li>Shoot Projectiles: Space Bar</li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="../../index.html">TravTutor</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+              <a class="nav-link" href="../../index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="../../about.html">About<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="../../projects.html">Projects<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="../../games.html">Games<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="../../contact.html">Contact<span class="sr-only">(current)</span></a>
+              </li>
           </ul>
-          <h3>Scoring and Winning</h3>
-          <p>
-            &emsp;You can gain score by breaking apart and destroying asteroids.
-            Each level has that number of asteroids associated with it causing
-            an increase in difficulty for each level and you must destroy all
-            asteroids to advance to the next level. There is no end to the
-            levels and this is a high score game which means with each time you
-            play you try to beat your highest score achieved.
-          </p>
-          <div style="text-align: center">
-            <a class="playButton" href="asteroids.html">Play</a>
-          </div>
-        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="padded">
+      <h1 class="title">Asteroids</h1>
+      <h2>How To Play</h2>
+      <h3>About</h3>
+      <p>
+        &emsp;This game is a simple asteroids like game which the player
+        controls a space ship and can fly through space destroying
+        asteroids. This game was made using only JavaScript and if you would
+        like to recreate the game yourself or learn how it was created you
+        can read this book here.
+        <br /><br />
+        &emsp;Controlling the ship is quite difficult and takes some time to
+        master since the game uses forces to accelerate the ship and
+        asteroids but since the objects are in space there is no gravity to
+        slow the objects down and thus any for applied is a constant force
+        until another force is applied (Newton's laws of motion). So
+        pressing down the key to turn the ship will cause the ship to turn
+        forever until you apply a force in the opposite direction. At first
+        this is disorienting and hard to control but with time it becomes
+        quite fun to fly around and control the physics of the ship.
+      </p>
+      <h3>Controls</h3>
+      <ul>
+        <li>Turn Ship: A/Left Arrow and D/Right Arrow Keys</li>
+        <li>Accelerate Ship: W/Up Arrow and S/Down Arrow Keys</li>
+        <li>Stop Ship: Q Key</li>
+        <li>Shoot Projectiles: Space Bar</li>
+      </ul>
+      <h3>Scoring and Winning</h3>
+      <p>
+        &emsp;You can gain score by breaking apart and destroying asteroids.
+        Each level has that number of asteroids associated with it causing
+        an increase in difficulty for each level and you must destroy all
+        asteroids to advance to the next level. There is no end to the
+        levels and this is a high score game which means with each time you
+        play you try to beat your highest score achieved.
+      </p>
+      <div style="text-align: center">
+        <a class="playButton" href="asteroids.html">Play</a>
       </div>
     </div>
-    <script src="../../scripts/nav-bar.js"></script>
+
+    <!-- <img id="welcome-pfp" src="./images/trav.png" alt="Profile picture of Travis Wise"/> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

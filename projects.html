@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/other.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Styles -->
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/other.css"> -->
+    <link rel="stylesheet" href="./styles/newStyles.css">
+
     <link rel="shortcut icon" href="./images/blue_star_ball.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,173 +19,189 @@
       rel="stylesheet"
     />
 
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>TravTutor | Projects Page</title>
   </head>
   <body>
-    <!-- Header -->
-    <div class="nav-bar">
-      <button class="links" id="logo-name">Travis M. Wise</button>
-      <button class="links" id="home">HOME</button>
-      <button class="links" id="about">ABOUT</button>
-      <button class="links" id="projects">PROJECTS</button>
-      <button class="links" id="games">GAMES</button>
-      <button class="links" id="contact">CONTACT</button>
-    </div>
-    <!-- Main Content -->
-    <div class="content-outer" style="height: fit-content">
-      <div class="content-inner">
-        <div class="content">
-          <h1>Projects</h1>
-          <p>
-            &emsp; Before reading further, I have removed a lot of the smaller
-            projects from this section that I feel are too simple when compared
-            to the more complex applications I have worked on since I first made
-            this website. This is because when I work on a project for months at
-            a time with multiple team members that project will look far better
-            than any small individual project I produce. As a result there is
-            far less projects in this list but the ones that are have taken at
-            least a few months to a year of time and effort. As I continue my
-            career I hope to add a great many projects which I am proud of. Many
-            projects small and large and can be seen in the games section of
-            this website
-            <a href="./games.html">here</a>. Which I plan to add to with each
-            new game I create.
-          </p>
-
-          <!--------------------------->
-          <!-- Club Event Organizer | WAMP Stack -->
-          <!--------------------------->
-          <h2 id="ceo" class="project-name">
-            Club Event Organizer Website Application | WAMP Stack
-          </h2>
-          <span class="project-label">Description: </span>
-          <p class="project-description">
-            <br />
-            &emsp;
-            <!-- Description of the project -->
-            This application was made as a final project for my Database Systems
-            Class to show our knowledge of using MySQL which we gained
-            throughout the course. This is the largest and most complex website
-            application I have made to this date and uses Windows, Apache,
-            MySQL, and PHP. We use functional PHP, prepared statements and
-            encrypts and decrypts information when necessary when interacting
-            with the database.
-
-            <br /><br />
-            &emsp;In the application image below we can see the
-            Entity-Relationship Diagram (ERD) which demonstrates the complexity
-            of the database and how all the entities are related. A full 25 page
-            description of the project report can be found
-            <a
-              href="https://github.com/TravisMWise/ClubEventOrganizer/blob/main/ReportInformation/ProjectReport.pdf"
-              >here</a
-            >. But in short, we created an application to model students being
-            able to sign up for universities, join and create Registered Student
-            Organizations (RSOs), as well as create and join events which could
-            be public, private (meaning only students at the university could
-            join), or RSO (meaning only students in the RSO could join). On top
-            of these requirements we also created a live chatroom to talk to
-            other users on the website and a profile section to update the users
-            profile to change their associated information and preferences on
-            the website including their name, password, and even light and dark
-            mode (which we simply swapped out the CSS files based on their
-            preferences).
-            <br />
-          </p>
-          <span class="project-label">Statistics: </span>
-          <p>
-            &emsp; Created April 2022.
-            <br />&emsp; The application is currently 3700+ lines of code.
-          </p>
-          <span class="project-label">Outlook: </span>
-          <br />
-          <p class="project-description">
-            &emsp;
-            <!-- Plans for the future -->
-            This application was a way for me to learn more about PHP and MySQL
-            and I thoroughly enjoyed the process. I plan to use PHP and MySQL
-            much more in the future and I want to use what I learned here to
-            create more complex and useful applications when I need them in the
-            future. I do not, however, need a complex website with a database
-            for anything at this time so I am spending more time focusing on
-            learning more about game engines to focus on what I am passionate
-            about.
-          </p>
-          <span class="project-label">Application:</span>
-          <img
-            id="ceoImg"
-            class="project-img"
-            src="./images/projects/ceo.png"
-            alt="Project image"
-          />
-
-          <!--------------------------->
-          <!-- Dimension -->
-          <!--------------------------->
-          <h2 id="dimension" class="project-name">
-            Dimension Game/Game Engine/Level Editor | JavaScript
-          </h2>
-          <span class="project-label">Description: </span>
-          <p class="project-description">
-            <br />
-            &emsp; Dimension is a game that was made for senior design by my
-            team members and I that took over a year to develop. My other team
-            members on the project were Kenaniah Subrahmanyam, Isaac
-            Subrahmanyam, Jason Dookhoo, and Jenan Abas. We decided to develop
-            the game in JavaScript to increase the complexity of the project and
-            create everything from scratch only using the p5.js library to
-            preload images for the game. This lead us to create a complete game
-            engine and a level editor which we discuss in detail
-            <a href="./games/dimension/dimensionCDR.html">here</a>
-            if you would like to read more and there is a demo video you can
-            watch
-            <a href="https://www.youtube.com/watch?v=vj2GCrb2X6E">here</a>. The
-            game engine and level editor are reusable for the creation of future
-            projects if we choose to do so but I am focusing more on using more
-            powerful engines such as Unity and Unreal.
-          </p>
-          <span class="project-label">Statistics: </span>
-          <p>
-            &emsp; Created From January 2022 to December 2022.
-            <br />&emsp; The application is currently 10,000+ lines of code.
-          </p>
-          <span class="project-label">Outlook: </span>
-          <br />
-          <p class="project-description">
-            &emsp;In the future I want to expand this game, but it is not
-            possible using the same tools we used due to the loading issues we
-            had with the game. In the future I would like to reuse assets we
-            purchased and create a new game with a similar feel and direction
-            using Unity and make a fun and entertaining game.
-          </p>
-          <span class="project-label">Application:</span>
-          <img
-            id="dimensionImg"
-            class="project-img"
-            src="./images/projects/dimension2.png"
-            alt="Project image"
-          />
-
-          <h2>Future Project Plans</h2>
-          <ul>
-            <li>
-              Application which can determine how hard a song is to play based
-              off it's music sheet.
-            </li>
-            <li>
-              Application that creates code from a blueprint similar to UE4 but
-              for languages like C and Java.
-            </li>
-            <li>
-              General fitness application that helps the user get or stay fit by
-              counting calories and or helping with a workout plan.
-            </li>
-            <li>Application to help users learn to spell in any language.</li>
-          </ul>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html">TravTutor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="./about.html">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item inactive">
+                <a class="nav-link" href="#">Projects<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="./games.html">Games<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="./contact.html">Contact<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
         </div>
+      </nav>
+  
+    <!-- Main Content -->
+    <div class="padded">
+      <h1>Projects</h1>
+      <p>
+        &emsp; Before reading further, I have removed a lot of the smaller
+        projects from this section that I feel are too simple when compared
+        to the more complex applications I have worked on since I first made
+        this website. This is because when I work on a project for months at
+        a time with multiple team members that project will look far better
+        than any small individual project I produce. As a result there is
+        far less projects in this list but the ones that are have taken at
+        least a few months to a year of time and effort. As I continue my
+        career I hope to add a great many projects which I am proud of. Many
+        projects small and large and can be seen in the games section of
+        this website
+        <a href="./games.html">here</a>. Which I plan to add to with each
+        new game I create.
+      </p>
+
+      <!--------------------------->
+      <!-- Club Event Organizer | WAMP Stack -->
+      <!--------------------------->
+      <h2 id="ceo" class="project-name">
+        Club Event Organizer Website Application | WAMP Stack
+      </h2>
+      <span class="project-label">Description: </span>
+      <p class="project-description">
+        <br />
+        &emsp;
+        <!-- Description of the project -->
+        This application was made as a final project for my Database Systems
+        Class to show our knowledge of using MySQL which we gained
+        throughout the course. This is the largest and most complex website
+        application I have made to this date and uses Windows, Apache,
+        MySQL, and PHP. We use functional PHP, prepared statements and
+        encrypts and decrypts information when necessary when interacting
+        with the database.
+
+        <br /><br />
+        &emsp;In the application image below we can see the
+        Entity-Relationship Diagram (ERD) which demonstrates the complexity
+        of the database and how all the entities are related. A full 25 page
+        description of the project report can be found
+        <a href="https://github.com/TravisMWise/ClubEventOrganizer/blob/main/ReportInformation/ProjectReport.pdf" >here</a >. 
+        But in short, we created an application to model students being
+        able to sign up for universities, join and create Registered Student
+        Organizations (RSOs), as well as create and join events which could
+        be public, private (meaning only students at the university could
+        join), or RSO (meaning only students in the RSO could join). On top
+        of these requirements we also created a live chatroom to talk to
+        other users on the website and a profile section to update the users
+        profile to change their associated information and preferences on
+        the website including their name, password, and even light and dark
+        mode (which we simply swapped out the CSS files based on their
+        preferences).
+        <br />
+      </p>
+      <span class="project-label">Statistics: </span>
+      <p>
+        &emsp; Created April 2022.
+        <br />&emsp; The application is currently 3700+ lines of code.
+      </p>
+      <span class="project-label">Outlook: </span>
+      <br />
+      <p class="project-description">
+        &emsp;
+        <!-- Plans for the future -->
+        This application was a way for me to learn more about PHP and MySQL
+        and I thoroughly enjoyed the process. I plan to use PHP and MySQL
+        much more in the future and I want to use what I learned here to
+        create more complex and useful applications when I need them in the
+        future. I do not, however, need a complex website with a database
+        for anything at this time so I am spending more time focusing on
+        learning more about game engines to focus on what I am passionate
+        about.
+      </p>
+      <span class="project-label">Application:</span>
+      <div class="center">
+        <img id="ceoImg" class="img-fluid center" src="./images/projects/ceo.png" alt="Project image" />
       </div>
+
+      <!--------------------------->
+      <!-- Dimension -->
+      <!--------------------------->
+      <h2 id="dimension" class="project-name">
+        Dimension Game/Game Engine/Level Editor | JavaScript
+      </h2>
+      <span class="project-label">Description: </span>
+      <p class="project-description">
+        <br />
+        &emsp; Dimension is a game that was made for senior design by my
+        team members and I that took over a year to develop. My other team
+        members on the project were Kenaniah Subrahmanyam, Isaac
+        Subrahmanyam, Jason Dookhoo, and Jenan Abas. We decided to develop
+        the game in JavaScript to increase the complexity of the project and
+        create everything from scratch only using the p5.js library to
+        preload images for the game. This lead us to create a complete game
+        engine and a level editor which we discuss in detail
+        <a href="./games/dimension/dimensionCDR.html">here</a>
+        if you would like to read more and there is a demo video you can
+        watch
+        <a href="https://www.youtube.com/watch?v=vj2GCrb2X6E">here</a>. The
+        game engine and level editor are reusable for the creation of future
+        projects if we choose to do so but I am focusing more on using more
+        powerful engines such as Unity and Unreal.
+      </p>
+      <span class="project-label">Statistics: </span>
+      <p>
+        &emsp; Created From January 2022 to December 2022.
+        <br />&emsp; The application is currently 10,000+ lines of code.
+      </p>
+      <span class="project-label">Outlook: </span>
+      <br />
+      <p class="project-description">
+        &emsp;In the future I want to expand this game, but it is not
+        possible using the same tools we used due to the loading issues we
+        had with the game. In the future I would like to reuse assets we
+        purchased and create a new game with a similar feel and direction
+        using Unity and make a fun and entertaining game.
+      </p>
+      <span class="project-label">Application:</span>
+      <br>
+      <div class="center">
+        <img id="dimensionImg" class="img-fluid" src="./images/projects/dimension2.png" alt="Project image"/>
+      </div>
+
+      <h2>Future Project Plans</h2>
+      <ul>
+        <li>
+          Application which can determine how hard a song is to play based
+          off it's music sheet.
+        </li>
+        <li>
+          Application that creates code from a blueprint similar to UE4 but
+          for languages like C and Java.
+        </li>
+        <li>
+          General fitness application that helps the user get or stay fit by
+          counting calories and or helping with a workout plan.
+        </li>
+        <li>Application to help users learn to spell in any language.</li>
+      </ul>
     </div>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./scripts/nav-bar.js"></script>
     <script src="./scripts/project-links.js"></script>
   </body>

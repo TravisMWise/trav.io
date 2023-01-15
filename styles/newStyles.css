@@ -12,19 +12,29 @@ body {
     padding-top: 3vh;
 }
 
-.card {
-    /* margin-left: 10px; */
-    /* margin-bottom: 10px; */
+.paddedLeftRight {
+    text-align: left;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+h1 {
+    padding-top: 3vh;
+}
+
+h2 {
+    padding-top: 1vh;
+}
+
+h3 {
+    padding-top: 0.5vh;
 }
 
 .center {
     text-align: center;
 }
 
-.paddingLeftRight {
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
+
 
 .playButton {
     display: inline-block;
@@ -41,4 +51,3 @@ body {
   .playButton:hover {
     background-color: rgb(66, 138, 255);
   }
-  

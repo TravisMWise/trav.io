@@ -18,6 +18,11 @@ body {
     padding-right: 2vw;
 }
 
+.marginLeftRight {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
 h1 {
     padding-top: 3vh;
 }

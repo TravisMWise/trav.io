@@ -1,3 +1,3 @@
 # travtutor
 
-Repo for my newest and most up to date portfolio website
+Repo for my newest and most up to date portfolio website.
